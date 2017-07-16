@@ -1,0 +1,75 @@
+# @see https://github.com/jekyll/jekyll/blob/master/.rubocop.yml
+# Some rules have been removed; rules that have been modified are at the bottom
+# of the file.
+Lint/UselessAccessModifier: { Enabled: false }
+
+Metrics/AbcSize: { Max: 20 }
+Metrics/ClassLength: { Max: 240 }
+Metrics/CyclomaticComplexity: { Max: 8 }
+Metrics/LineLength: { Max: 112 }
+Metrics/MethodLength: { Max: 24 }
+Metrics/ModuleLength: { Max: 240 }
+Metrics/ParameterLists: { Max: 4 }
+Metrics/PerceivedComplexity: { Max: 8 }
+
+Style/AlignArray: { Enabled: true }
+Style/ExtraSpacing: { AllowForAlignment: true }
+Style/FirstParameterIndentation: { EnforcedStyle: consistent }
+Style/IndentArray: { EnforcedStyle: consistent }
+Style/IndentHash: { EnforcedStyle: consistent }
+Style/MultilineMethodCallIndentation: { EnforcedStyle: indented }
+Style/MultilineOperationIndentation: { EnforcedStyle: indented }
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%i': '{}'
+    '%q': '{}'
+    '%Q': '{}'
+    '%r': '!!'
+    '%s': '()'
+    '%w': '()'
+    '%W': '()'
+    '%x': '()'
+Style/RegexpLiteral: { EnforcedStyle: slashes }
+Style/SignalException: { EnforcedStyle: only_raise }
+Style/StringLiteralsInInterpolation: { EnforcedStyle: double_quotes }
+
+AllCops:
+  TargetRubyVersion: 2.3
+  Include:
+  - lib/**/*.rb
+  - Rakefile
+
+  Exclude:
+  - .rubocop.yml
+  - .codeclimate.yml
+  - .travis.yml
+  - .gitignore
+  - .rspec
+
+  - Gemfile.lock
+  - CHANGELOG.{md,markdown,txt,textile}
+  - CONTRIBUTING.{md,markdown,txt,textile}
+  - readme.{md,markdown,txt,textile}
+  - README.{md,markdown,txt,textile}
+  - Readme.{md,markdown,txt,textile}
+  - ReadMe.{md,markdown,txt,textile}
+  - COPYING
+  - LICENSE
+
+  - site/**/*
+  - test/**/*
+  - vendor/**/*
+  - features/**/*
+  - script/**/*
+
+# @see https://github.com/airbnb/ruby
+Style/AlignParameters: { EnforcedStyle: with_first_parameter }
+Style/DotPosition: { EnforcedStyle: trailing }
+Style/HashSyntax: { EnforcedStyle: ruby19 }
+Style/IndentationWidth: { Width: 2 }
+Style/NegatedIf: { Enabled: false }
+Style/SpaceBeforeBlockBraces: { EnforcedStyle: space }
+Style/StringLiterals: { EnforcedStyle: single_quotes }
+Style/SymbolArray: { Enabled: true }
+Style/Tab: { Enabled: false }
+Style/TrailingCommaInLiteral: { EnforcedStyleForMultiline: comma }
