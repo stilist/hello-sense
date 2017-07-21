@@ -2,7 +2,7 @@ require_relative 'lib/hello_sense/version'
 
 Gem::Specification.new do |s|
   s.date = Time.now.strftime('%Y-%m-%d')
-  s.description = 'TK'
+  s.description = "Ruby implementation of Sense's private API"
   s.name = 'hello-sense'
   s.required_ruby_version = ['>= 2.3.0', '< 2.5.0']
   s.summary = 'TK'
