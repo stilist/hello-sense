@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rspec-core', '~> 3.6', '>= 3.6.0')
   s.add_development_dependency('rspec-expectations', '~> 3.6', '>= 3.6.0')
   s.add_development_dependency('rubocop', '~> 0.48', '>= 0.48.0')
-  s.add_development_dependency('yard', '~> 0.9', '>= 0.9.0')
+  s.add_development_dependency('yard', '~> 0.9.11', '>= 0.9.11')
 end
